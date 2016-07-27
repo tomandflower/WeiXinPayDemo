@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G0a-I7-ldQ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F2Q-xO-Hef">
+                                        <rect key="frame" x="0.0" y="0.0" width="640" height="568"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mb8-1n-zfs">
+                                                <rect key="frame" x="87" y="15" width="72" height="30"/>
+                                                <state key="normal" title="WeiXinPay"/>
+                                                <connections>
+                                                    <action selector="weixinPayAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AFh-VW-GqO"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HgS-P2-0lk">
+                                                <rect key="frame" x="588" y="39" width="32" height="30"/>
+                                                <state key="normal" title="right"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="HgS-P2-0lk" firstAttribute="top" secondItem="F2Q-xO-Hef" secondAttribute="top" constant="39" id="OHN-S0-tg2"/>
+                                            <constraint firstAttribute="trailing" secondItem="HgS-P2-0lk" secondAttribute="trailing" constant="20" id="x9Z-B2-cIT"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="F2Q-xO-Hef" firstAttribute="top" secondItem="G0a-I7-ldQ" secondAttribute="top" id="761-Eq-8zr"/>
+                                    <constraint firstAttribute="bottom" secondItem="F2Q-xO-Hef" secondAttribute="bottom" id="8Ml-Kn-7vn"/>
+                                    <constraint firstAttribute="trailing" secondItem="F2Q-xO-Hef" secondAttribute="trailing" id="9Ni-5v-JUW"/>
+                                    <constraint firstItem="F2Q-xO-Hef" firstAttribute="leading" secondItem="G0a-I7-ldQ" secondAttribute="leading" id="QL9-HS-DuK"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="F2Q-xO-Hef" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="2" id="CdW-NP-4Lt"/>
+                            <constraint firstAttribute="trailing" secondItem="G0a-I7-ldQ" secondAttribute="trailing" id="ROa-VJ-maF"/>
+                            <constraint firstItem="G0a-I7-ldQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="WQ1-ga-0nh"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="G0a-I7-ldQ" secondAttribute="bottom" id="Xuz-i0-lZc"/>
+                            <constraint firstItem="F2Q-xO-Hef" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="a0K-E9-QR8"/>
+                            <constraint firstItem="G0a-I7-ldQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="noM-gN-rKK"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="526" y="398"/>
+        </scene>
+    </scenes>
+</document>
